@@ -38,16 +38,7 @@ class FieldInfo {
   });
 }
 
-const kFields = [
-  FieldInfo(
-    id: 'kaonashi',
-    name: 'カオナシ農園',
-    emoji: '🌿',
-    lat: 34.6937,
-    lng: 135.7010,
-    locationLabel: '📍生駒市',
-    color: Color(0xFF388E3C),
-  ),
+
   FieldInfo(
     id: 'nao',
     name: 'なお農園',
