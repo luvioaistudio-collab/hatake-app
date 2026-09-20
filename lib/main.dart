@@ -1110,7 +1110,7 @@ class _FieldMapPageState extends State<FieldMapPage> {
                   color: const Color(0xFFA8D5A2), borderRadius: BorderRadius.circular(16)),
               child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 5, mainAxisSpacing: 4, crossAxisSpacing: 4, childAspectRatio: 1.5),
+                    crossAxisCount: 5, mainAxisSpacing: 4, crossAxisSpacing: 4, childAspectRatio: 1.8),
                 itemCount: 50,
                 itemBuilder: (ctx, i) {
                   final row = i ~/ 5;
@@ -1129,9 +1129,9 @@ class _FieldMapPageState extends State<FieldMapPage> {
                       child: crop != null
                           ? Column(mainAxisAlignment: MainAxisAlignment.center, children: [
                               Text(crop['name']!.toString().substring(0, 1),
-                                  style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black87)),
+                                  style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.black87)),
                               Text(crop['name']!.toString(),
-                                  style: const TextStyle(fontSize: 8, fontWeight: FontWeight.bold),
+                                  style: const TextStyle(fontSize: 7, fontWeight: FontWeight.bold),
                                   textAlign: TextAlign.center, overflow: TextOverflow.ellipsis),
                               if ((crop['harvest_date'] ?? '').toString().isNotEmpty)
                                 Container(margin: const EdgeInsets.only(top: 2),
@@ -1142,7 +1142,7 @@ class _FieldMapPageState extends State<FieldMapPage> {
                                     width: 6, height: 6,
                                     decoration: BoxDecoration(color: fc, shape: BoxShape.circle)),
                             ])
-                          : const Icon(Icons.add, color: Colors.white54, size: 16),
+                          : const Icon(Icons.add, color: Colors.white54, size: 14),
                     ),
                   );
                 },
