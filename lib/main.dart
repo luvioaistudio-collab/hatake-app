@@ -38,7 +38,7 @@ class FieldInfo {
   });
 }
 
-
+const kFields = [
   FieldInfo(
     id: 'nao',
     name: 'なお農園',
