@@ -1110,11 +1110,11 @@ class _FieldMapPageState extends State<FieldMapPage> {
                   color: const Color(0xFFA8D5A2), borderRadius: BorderRadius.circular(16)),
               child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 4, mainAxisSpacing: 6, crossAxisSpacing: 6),
-                itemCount: 24,
+                    crossAxisCount: 5, mainAxisSpacing: 6, crossAxisSpacing: 6),
+                itemCount: 50,
                 itemBuilder: (ctx, i) {
-                  final row = i ~/ 4;
-                  final col = i % 4;
+                  final row = i ~/ 5;
+                  final col = i % 5;
                   final key = '$row-$col';
                   final crop = _crops[key];
                   return GestureDetector(
